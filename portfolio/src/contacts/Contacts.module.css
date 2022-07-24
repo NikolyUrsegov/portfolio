@@ -1,0 +1,12 @@
+.block {
+    min-height: 100vh;
+    background-color: #4fab4f;
+    display: flex;
+    align-items: center;
+}
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}

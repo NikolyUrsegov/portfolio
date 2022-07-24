@@ -1,0 +1,24 @@
+.block {
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+.container {
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.blockIcon{
+    display: flex;
+    max-width: 360px;
+    justify-content: space-between;
+    border: 1px solid black;
+
+}
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: cornflowerblue;
+    margin: 5px;
+}
