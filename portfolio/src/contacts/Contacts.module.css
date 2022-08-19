@@ -1,12 +1,21 @@
 .block {
     min-height: 100vh;
-    background-color: #4fab4f;
     display: flex;
     align-items: center;
+    padding: 70px 0 70px 0;
+    background-color: #fff;
 }
 .container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: bisque;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 700px){
+    .block{
+        width: 100%;
+    }
 }

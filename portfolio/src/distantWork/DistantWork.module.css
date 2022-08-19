@@ -1,8 +1,34 @@
 .block {
     min-height: 50vh;
-    background-color: gold;
-}
-.container {
+    padding: 70px 0 70px 0;
+    background-color: #f4f4f4;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container button{
+    background: #1c1c1c;
+    color: #eee;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 128px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    transition: all .4s;
+}
+
+.container button:hover{
+    background: #fff;
+    color: #1c1c1c;
 }

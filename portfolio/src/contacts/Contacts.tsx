@@ -1,15 +1,16 @@
 import React from 'react';
 import s from './Contacts.module.css'
-import container from '../common/style/Container.module.css'
 import FormContacts from "./form/FormContacts";
+import Title from "../common/Title";
+import ContactBlock from "./ContactBlock/ContactBlock";
 
 const Contacts = () => {
     return (
         <div className={s.block}>
-            <div className={`${container.container} ${s.container}`}>
-                <h2 style={{background: 'red'}}>Contacts</h2>
+            <div className={`${s.container}`}>
+                <Title title={'Contacts.'}/>
+                <ContactBlock/>
                 <FormContacts/>
-                <button>Send</button>
             </div>
         </div>
     );

@@ -1,20 +1,35 @@
 import React from 'react';
 import s from './Main.module.css'
-import container from '../common/style/Container.module.css'
+import dots from '../assets/images/dots.png'
+import myPhoto from '../assets/images/MyFoto.jpg'
+
+export const backgroundImg = (url: string) => {
+    return {
+        backgroundImage: `url(${url})`
+    }
+}
 
 const Main = () => {
+
     return (
 
         <div className={s.mainBlock}>
-            <div className={container.container}>
-                <div className={s.text}>
-                    <span>Hello</span>
-                    <h2>My name Ursegov Nikolya</h2>
-                    <span>I am frontend developer</span>
-                </div>
+            <div className={s.block}>
                 <div className={s.photo}>
-
+                    <div className={s.img} style={backgroundImg(myPhoto)}>
+                    </div>
+                    <div className={s.dots} style={backgroundImg(dots)}></div>
                 </div>
+                <div className={s.text}>
+                    <div className={s.description}>
+                    <h3>About Me.</h3>
+                        <span>Web developer</span>
+                        <p>
+                            I am <b>Ursegov Nikolai</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five centuries, but also the leap into electronic but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

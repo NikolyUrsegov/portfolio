@@ -1,0 +1,32 @@
+.blockTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.title {
+    position: relative;
+}
+
+.title h3 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.title .dots {
+    position: absolute;
+    top: 27px;
+    left: -3px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-repeat: repeat;
+    background-position: center;
+}

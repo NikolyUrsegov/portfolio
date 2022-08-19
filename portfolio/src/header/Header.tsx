@@ -5,7 +5,12 @@ import Nav from "../nav/Nav";
 const Header = () => {
     return (
         <div className={s.header}>
-            <Nav/>
+            <div className={s.container}>
+                <div className={s.logo}>
+                    <span>Nikolai</span>
+                </div>
+                <Nav/>
+            </div>
         </div>
     );
 };
