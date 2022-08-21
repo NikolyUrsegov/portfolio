@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './ContactBlock.module.css'
+import s from './ContactBlock.module.scss'
 import mail from '../../assets/images/mail.svg'
 import phone from '../../assets/images/phone.svg'
 

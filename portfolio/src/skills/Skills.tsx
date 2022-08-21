@@ -1,6 +1,5 @@
 import React from 'react';
-import s from './Skills.module.css'
-import container from '../common/style/Container.module.css'
+import s from './Skills.module.scss'
 import Skill from "./skill/Skill";
 import Title from "../common/Title";
 import js from '../assets/images/javascript.svg'

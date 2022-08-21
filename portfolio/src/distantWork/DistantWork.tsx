@@ -1,6 +1,5 @@
 import React from 'react';
-import container from '../common/style/Container.module.css'
-import s from './DistantWork.module.css'
+import s from './DistantWork.module.scss'
 import Title from "../common/Title";
 
 const DistantWork = () => {

@@ -1,0 +1,36 @@
+.nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    a {
+        margin: 0;
+        color: #fff;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    @media screen and (max-width: 770px){
+        display: none;
+    }
+}
+
+.smallNav {
+    background-color: white;
+    width: 42px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2px;
+    .item {
+        width: 22px;
+        height: 2px;
+        background-color: #1c1c1c;
+    }
+    @media screen and (min-width: 770px){
+        display: none;
+    }
+}

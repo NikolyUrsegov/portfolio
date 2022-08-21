@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Contacts.module.css'
+import s from './Contacts.module.scss'
 import FormContacts from "./form/FormContacts";
 import Title from "../common/Title";
 import ContactBlock from "./ContactBlock/ContactBlock";
