@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Title.module.css'
-import {backgroundImg} from "../main/Main";
 import dots from '../assets/images/dots.png'
+import {backgroundImg} from "../assets/utilits/utilitsBg";
 
 const Title = (props: {title: string}) => {
     return (

@@ -2,12 +2,8 @@ import React from 'react';
 import s from './Main.module.scss'
 import dots from '../assets/images/dots.png'
 import myPhoto from '../assets/images/MyFoto.jpg'
+import {backgroundImg} from "../assets/utilits/utilitsBg";
 
-export const backgroundImg = (url: string) => {
-    return {
-        backgroundImage: `url(${url})`
-    }
-}
 
 const Main = () => {
 

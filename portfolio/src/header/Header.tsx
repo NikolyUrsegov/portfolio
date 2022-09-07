@@ -1,15 +1,49 @@
 import React from 'react';
 import s from './Header.module.scss'
-import Nav from "../nav/Nav";
+import {backgroundImg} from "../assets/utilits/utilitsBg";
+import bg from '../assets/images/headerBg.jpeg'
+import tgIcon from '../assets/images/linksSvg/telegramSvg.svg'
+import vkIcon from '../assets/images/linksSvg/vkSvg.svg'
+import wsIcon from '../assets/images/linksSvg/wsSvg.svg'
+import linkIcon from '../assets/images/linksSvg/linkSvg.svg'
 
 const Header = () => {
     return (
-        <div className={s.header}>
-            <div className={s.container}>
-                <div className={s.logo}>
-                    <span>Nikolai</span>
+        <div className={s.header} style={backgroundImg(bg)}>
+            <div>
+                <div className={s.caption}>
+                    <div className={s.title}>
+                        <h5>Hello</h5>
+                    </div>
+                    <div>
+                        <h1>
+                            <span>I am </span>
+                            <span>Developer</span>
+                        </h1>
+                    </div>
                 </div>
-                <Nav/>
+                <div className={s.socialIcon}>
+                    <a href="">
+                        <span>
+                            <img src={tgIcon}/>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span>
+                            <img src={vkIcon}/>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span>
+                            <img src={wsIcon}/>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span>
+                            <img src={linkIcon}/>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     );

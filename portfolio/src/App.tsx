@@ -1,17 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from "./header/Header";
+import HeaderNav from "./header/HeaderNav/HeaderNav";
 import Main from "./main/Main";
 import Skills from "./skills/Skills";
 import MyWorks from "./MyWorks/MyWorks";
 import DistantWork from "./distantWork/DistantWork";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 function App() {
     return (
-        <div className="App">
+        <div className="app">
+            <HeaderNav/>
             <Header/>
             <Main/>
             <Skills/>

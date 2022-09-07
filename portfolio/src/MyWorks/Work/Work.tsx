@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Work.module.scss'
 import vkImg from "../../assets/images/vk.jpeg";
+import {backgroundImg} from "../../assets/utilits/utilitsBg";
 
 type WorkPropsType = {
     title: string
@@ -9,14 +10,11 @@ type WorkPropsType = {
 }
 
 const Work = (props: WorkPropsType) => {
-    const backgroundImg = {
-        backgroundImage: `url(${props.backgroundImgVK})`
-    }
     return (
         <div className={s.workBlock}>
             <div className={s.block}>
                 <div className={s.photo} >
-                    <div className={s.img} style={backgroundImg}></div>
+                    <div className={s.img} style={backgroundImg(props.backgroundImgVK)}></div>
                     <button>Watch</button>
                 </div>
             </div>

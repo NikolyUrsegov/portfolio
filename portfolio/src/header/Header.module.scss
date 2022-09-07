@@ -1,33 +1,59 @@
 .header {
-  height: 80px;
-  background-color: #1c1c1c;
-  display: flex;
-  padding: 20px 0 30px;
-  border: none;
-  border-radius: 0;
+  height: 100vh;
   width: 100%;
-  flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .container {
-    width: 1170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  //&:before {
+  //  position: absolute;
+  //  background-color: black;
+  //  content: '';
+  //  opacity: 0.4;
+  //  top: 0;
+  //  left: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  z-index: 0;
+  //}
 
-    .logo {
-      float: left;
-      padding-top: 20px;
-      font-size: 18px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
+  .caption {
+    color: #fff;
+    z-index: 2;
+
+    .title {
+      text-align: center;
+      h5 {
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        line-height: 1.1;
+      }
+    }
+
+    h1 {
+      font-weight: 200;
+      font-size: 3.4rem;
+      line-height: 1.2;
+    }
+  }
+  .socialIcon{
+    margin: 20px 0 0 0;
+    text-align: center;
+    a{
+      margin: 10px;
+      span{
+
+        img{
+          width: 35px;
+          height: 35px;
+        }
+      }
     }
   }
 }
-
