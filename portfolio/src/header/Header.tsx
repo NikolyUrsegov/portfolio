@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './Header.module.scss'
 import {backgroundImg} from "../assets/utilits/utilitsBg";
 import bg from '../assets/images/headerBg.jpeg'
@@ -8,6 +8,24 @@ import wsIcon from '../assets/images/linksSvg/wsSvg.svg'
 import linkIcon from '../assets/images/linksSvg/linkSvg.svg'
 
 const Header = () => {
+    const [span, setSpan] = useState('active')
+    const [span1, setSpan1] = useState('hidden')
+
+    useEffect(() => {
+        const int = setInterval(() => {
+            if (span == 'active') {
+                setSpan('hidden')
+                setSpan1('active')
+            }
+            if (span == 'hidden') {
+                setSpan('active')
+                setSpan1('hidden')
+            }
+        }, 1500)
+        return () => {
+            clearInterval(int)
+        }
+    })
     return (
         <div className={s.header} style={backgroundImg(bg)}>
             <div>
@@ -18,7 +36,9 @@ const Header = () => {
                     <div>
                         <h1>
                             <span>I am </span>
-                            <span>Developer</span>
+                            <span hidden={span == 'hidden'}>Ursegov Nikolay</span>
+                            <span hidden={span1 == 'hidden'}>Front-end Developer</span>
+
                         </h1>
                     </div>
                 </div>

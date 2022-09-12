@@ -1,3 +1,5 @@
+@import "../common/style/mixins";
+
 .header {
   height: 100vh;
   width: 100%;
@@ -28,6 +30,7 @@
 
     .title {
       text-align: center;
+
       h5 {
         font-size: 50px;
         font-weight: 800;
@@ -37,19 +40,28 @@
     }
 
     h1 {
+      margin: 0;
       font-weight: 200;
       font-size: 3.4rem;
       line-height: 1.2;
+      @include media(700px) {
+        font-size: 2.4rem;
+      }
+      @include media(500px) {
+        font-size: 1.7rem;
+      }
     }
   }
-  .socialIcon{
+
+  .socialIcon {
     margin: 20px 0 0 0;
     text-align: center;
-    a{
-      margin: 10px;
-      span{
 
-        img{
+    a {
+      margin: 10px;
+
+      span {
+        img {
           width: 35px;
           height: 35px;
         }
