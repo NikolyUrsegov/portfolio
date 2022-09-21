@@ -28,24 +28,24 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={s.socialIcon}>
-                    <a href="https://t.me/@kolya_ursegov">
+                    <a href="tg://resolve?domain=@kolya_ursegov">
                         <span>
                             <img src={tgIcon}/>
                         </span>
                     </a>
-                    <a href="">
+                    <a href="https://vk.com/id307145735" target={'_blank'}>
                         <span>
                             <img src={vkIcon}/>
                         </span>
                     </a>
-                    <a href="">
+                    <a href="https://wa.me/79991636806" target={'_blank'}>
                         <span>
                             <img src={wsIcon}/>
                         </span>
                     </a>
-                    <a href="">
+                    <a href="" target={'_blank'}>
                         <span>
-                            <img src={linkIcon}/>
+                            <img src={linkIcon} />
                         </span>
                     </a>
                 </div>
