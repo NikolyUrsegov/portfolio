@@ -6,7 +6,7 @@ import js from '../assets/images/javascript.svg'
 
 const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id={'skills'}>
             <Title title={'Skills.'}/>
             <div className={s.skills}>
                 <Skill title={'JavaScript'}

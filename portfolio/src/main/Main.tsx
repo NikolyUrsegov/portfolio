@@ -1,6 +1,8 @@
 import React from 'react';
 import s from './Main.module.scss'
+import {Fade} from "react-awesome-reveal";
 import dots from '../assets/images/dots.png'
+import Tilt from 'react-parallax-tilt';
 import myPhoto from '../assets/images/MyFoto.jpg'
 import {backgroundImg} from "../assets/utilits/utilitsBg";
 
@@ -9,14 +11,15 @@ const Main = () => {
 
     return (
 
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock} id={'main'}>
             <div className={s.block}>
                 <div className={s.photo}>
-                    <div className={s.img} style={backgroundImg(myPhoto)}>
-                    </div>
+                    <Tilt className={s.img} style={backgroundImg(myPhoto)}></Tilt>
                     <div className={s.dots} style={backgroundImg(dots)}></div>
                 </div>
+
                 <div className={s.text}>
+                    <Fade duration={2000}>
                         <h3>About Me.</h3>
                         <span>Web developer</span>
                         <p>
@@ -26,8 +29,8 @@ const Main = () => {
                             typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
                             release of Letraset sheets containing
                         </p>
+                    </Fade>
                 </div>
-
             </div>
         </div>
     );

@@ -12,24 +12,25 @@
   justify-content: center;
   align-items: center;
 
-  //&:before {
-  //  position: absolute;
-  //  background-color: black;
-  //  content: '';
-  //  opacity: 0.4;
-  //  top: 0;
-  //  left: 0;
-  //  right: 0;
-  //  bottom: 0;
-  //  z-index: 0;
-  //}
-
   .caption {
     color: #fff;
-    z-index: 2;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0.4;
+      z-index: 0;
+    }
 
     .title {
       text-align: center;
+      z-index: 1;
+      position: relative;
+
 
       h5 {
         font-size: 50px;
@@ -44,6 +45,7 @@
       font-weight: 200;
       font-size: 3.4rem;
       line-height: 1.2;
+      position: relative;
       @include media(700px) {
         font-size: 2.4rem;
       }
@@ -56,6 +58,9 @@
   .socialIcon {
     margin: 20px 0 0 0;
     text-align: center;
+    z-index: 2;
+    position: relative;
+
 
     a {
       margin: 10px;

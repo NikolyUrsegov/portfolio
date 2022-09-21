@@ -1,21 +1,26 @@
 import React from 'react';
 import s from './FormContacts.module.scss'
+import {Fade} from "react-awesome-reveal";
+
 
 const FormContacts = () => {
     return (
+
         <form className={s.form}>
-            <div className={s.block}>
-                <div className={s.item}>
-                    <input defaultValue={'Name'}/>
+            <Fade duration={2000}>
+                <div className={s.block}>
+                    <div className={s.item}>
+                        <input defaultValue={'Name'}/>
+                    </div>
+                    <div className={s.item}>
+                        <input defaultValue={'Email'}/>
+                    </div>
                 </div>
-                <div className={s.item}>
-                    <input defaultValue={'Email'}/>
+                <div className={s.areaBlock}>
+                    <textarea defaultValue={'Message'}/>
                 </div>
-            </div>
-            <div className={s.areaBlock}>
-                <textarea defaultValue={'Message'}/>
-            </div>
-            <button type={'submit'}>Submit</button>
+                <button type={'submit'}>Submit</button>
+            </Fade>
         </form>
     );
 };
