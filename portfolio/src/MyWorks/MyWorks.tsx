@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './MyWorks.module.scss'
-import container from '../common/style/Container.module.css'
 import Work from "./Work/Work";
 import Title from "../common/Title";
 import vkImg from '../assets/images/vk.jpeg'
@@ -8,7 +7,7 @@ import vkImg from '../assets/images/vk.jpeg'
 const MyWorks = () => {
 
     return (
-        <div className={s.worksBlock}>
+        <div className={s.worksBlock} id={'project'}>
                 <Title title={'My Works.'}/>
                 <div className={s.works}>
                     <Work title={'Social network'}

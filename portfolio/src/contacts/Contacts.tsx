@@ -6,7 +6,7 @@ import ContactBlock from "./ContactBlock/ContactBlock";
 
 const Contacts = () => {
     return (
-        <div className={s.block}>
+        <div className={s.block} id={'contacts'}>
             <div className={`${s.container}`}>
                 <Title title={'Contacts.'}/>
                 <ContactBlock/>

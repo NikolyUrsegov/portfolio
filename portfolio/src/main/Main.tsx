@@ -11,7 +11,7 @@ const Main = () => {
 
     return (
 
-        <div className={s.mainBlock} id={'main'}>
+        <div className={s.mainBlock} id={'aboutMe'}>
             <div className={s.block}>
                 <div className={s.photo}>
                     <Tilt className={s.img} style={backgroundImg(myPhoto)}></Tilt>

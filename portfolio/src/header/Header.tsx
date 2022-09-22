@@ -8,8 +8,9 @@ import wsIcon from '../assets/images/linksSvg/wsSvg.svg'
 import linkIcon from '../assets/images/linksSvg/linkSvg.svg'
 import ReactTypingEffect from 'react-typing-effect';
 const Header = () => {
+
     return (
-        <div className={s.header} style={backgroundImg(bg)}>
+        <div className={s.header} style={backgroundImg(bg)} id={'home'}>
             <div>
                 <div className={s.caption}>
                     <div className={s.title}>
