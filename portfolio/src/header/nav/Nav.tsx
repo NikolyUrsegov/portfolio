@@ -10,7 +10,7 @@ const Nav: React.FC<NavPropsType> = ({scroll}) => {
     return (
         <>
             <div className={!scroll? s.nav : `${s.scroll} ${s.nav}`}>
-                <Link activeClass={s.active} to="home" spy={true} smooth={true} offset={1} duration={500} delay={100}>
+                <Link activeClass={s.active} to="home" spy={true} smooth={true} offset={-10} duration={500} delay={100}>
                     Home
                 </Link>
                 <Link activeClass={s.active} to="aboutMe" spy={true} smooth={true} offset={1} duration={500} delay={100}>
