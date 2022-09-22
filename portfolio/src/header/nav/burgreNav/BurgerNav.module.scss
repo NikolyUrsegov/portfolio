@@ -1,0 +1,90 @@
+.BurgerNav {
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    min-height: 150px;
+
+    a {
+      margin: 5px 0 5px 0;
+    }
+
+    .active {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+
+    @media screen and (min-width: 770px) {
+      display: none;
+    }
+  }
+
+  .show {
+    height: 0;
+    transform: translateY(-300px);
+  }
+
+  .smallNav {
+    background-color: #fff;
+    width: 42px;
+    height: 3px;
+    position: absolute;
+    top: 34px;
+    right: 20px;
+
+    &:before {
+      position: absolute;
+      top: 10px;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: inherit;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 10px;
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: inherit;
+    }
+
+  }
+}
+
+.scroll {
+  .nav {
+    border-top: 1px solid #f4f4f4;
+    background: #fff;
+
+    .active {
+      &:before {
+        background-color: #111;
+      }
+    }
+
+    a {
+      color: #111;
+    }
+  }
+  .smallNav{
+    background-color: #111
+  }
+
+}
